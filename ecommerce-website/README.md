@@ -1,3 +1,15 @@
+![login](https://user-images.githubusercontent.com/55704250/206675303-79afb889-361f-43dd-9c37-261338f2b9d1.PNG)
+![register](https://user-images.githubusercontent.com/55704250/206675335-d55227e5-f5f5-4de5-8c6e-0f26b3fb660e.PNG)
+![dashboard](https://user-images.githubusercontent.com/55704250/206675376-2afa2b38-0d8b-42b1-9774-46ef5a6ec754.PNG)
+![add category](https://user-images.githubusercontent.com/55704250/206675397-ac52c048-90a2-418b-8a01-cfbc1b0e3d63.PNG)
+![manage category](https://user-images.githubusercontent.com/55704250/206675433-057152a5-3d9b-4e57-b2b9-cf5c55a3bbd1.PNG)
+![manage brand](https://user-images.githubusercontent.com/55704250/206675458-d9a22af3-2761-460e-b349-5e2fbf6aadbd.PNG)
+![add product](https://user-images.githubusercontent.com/55704250/206675484-96087b7b-bcb5-47f7-9a3c-706cfeb87eb3.PNG)
+![manage product](https://user-images.githubusercontent.com/55704250/206675514-e343d98d-1596-4611-8422-85f219d9959f.PNG)
+![shoing product](https://user-images.githubusercontent.com/55704250/206675538-d74811a5-75cf-4221-8f1f-397d0889bb04.PNG)
+![detail product](https://user-images.githubusercontent.com/55704250/206675557-6580dd97-b659-41ae-a69e-bb9f9a61d75d.PNG)
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
