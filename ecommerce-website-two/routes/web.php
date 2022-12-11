@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BrandController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +26,5 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+    Route::get('/add-category', [CategoryController::class, 'addCategory'])->name('add-category');
 });

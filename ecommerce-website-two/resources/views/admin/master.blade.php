@@ -16,6 +16,7 @@
     <!-- Bootstrap CSS
 		============================================ -->
     <link rel="stylesheet" href="{{asset('/')}}admin/css/bootstrap.min.css">
+
     <!-- Bootstrap CSS
 		============================================ -->
     <link rel="stylesheet" href="{{asset('/')}}admin/css/font-awesome.min.css">
@@ -87,6 +88,8 @@
     @include('admin.includes.header')
 
     @yield('body')
+
+{{--    @include('admin.includes.footer')--}}
 
 </div>
 <!-- jquery

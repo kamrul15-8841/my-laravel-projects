@@ -162,7 +162,7 @@
                                                 <li><a href="#"><span class="icon nalika-settings author-log-ic"></span> Settings</a>
                                                 </li>
                                                 <li><a href="" onclick="event.preventDefault();document.getElementById('logoutForm').submit();confirm('Are You Sure You want to Log Out');"><span class="icon nalika-unlocked author-log-ic"></span> Log Out</a>
-                                                
+
                                                 <form action="{{route('logout')}}" method="POST" id="logoutForm">
                                                     @csrf
                                                 </form>
