@@ -4,655 +4,683 @@
     Dashboard
 @endsection
 @section('body')
-    <!-- Mobile Menu start -->
-    <div class="mobile-menu-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="mobile-menu">
-                        <nav id="dropdown">
-                            <ul class="mobile-menu-nav">
-                                <li><a data-toggle="collapse" data-target="#Charts" href="#">Home <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                    <ul class="collapse dropdown-header-top">
-                                        <li><a href="index.html">Dashboard v.1</a></li>
-                                        <li><a href="index-1.html">Dashboard v.2</a></li>
-                                        <li><a href="index-3.html">Dashboard v.3</a></li>
-                                        <li><a href="product-list.html">Product List</a></li>
-                                        <li><a href="product-edit.html">Product Edit</a></li>
-                                        <li><a href="product-detail.html">Product Detail</a></li>
-                                        <li><a href="product-cart.html">Product Cart</a></li>
-                                        <li><a href="product-payment.html">Product Payment</a></li>
-                                        <li><a href="analytics.html">Analytics</a></li>
-                                        <li><a href="widgets.html">Widgets</a></li>
-                                    </ul>
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    {{--    <div class="main-content">--}}
+    <div class="container-fluid">
+
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-flex align-items-center justify-content-between">
+                    <h4 class="mb-0 font-size-18">Dashboard</h4>
+
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end page title -->
+
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="card overflow-hidden">
+                    <div class="bg-soft-primary">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="text-primary p-3">
+                                    <h5 class="text-primary">Welcome Back !</h5>
+                                    <p>Skote Dashboard</p>
+                                </div>
+                            </div>
+                            <div class="col-5 align-self-end">
+                                <img src="{{asset('/')}}admin/assets/images/profile-img.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="avatar-md profile-user-wid mb-4">
+                                    <img src="{{asset('/')}}admin/assets/images/users/avatar-1.jpg" alt="" class="img-thumbnail rounded-circle">
+                                </div>
+                                <h5 class="font-size-15 text-truncate">Henry Price</h5>
+                                <p class="text-muted mb-0 text-truncate">UI/UX Designer</p>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <div class="pt-4">
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="font-size-15">125</h5>
+                                            <p class="text-muted mb-0">Projects</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="font-size-15">$1245</h5>
+                                            <p class="text-muted mb-0">Revenue</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="btn btn-primary waves-effect waves-light btn-sm">View Profile <i class="mdi mdi-arrow-right ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">Monthly Earning</h4>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p class="text-muted">This month</p>
+                                <h3>$34,252</h3>
+                                <p class="text-muted"><span class="text-success mr-2"> 12% <i class="mdi mdi-arrow-up"></i> </span> From previous period</p>
+
+                                <div class="mt-4">
+                                    <a href="#" class="btn btn-primary waves-effect waves-light btn-sm">View More <i class="mdi mdi-arrow-right ml-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-4 mt-sm-0">
+                                    <div id="radialBar-chart" class="apex-charts"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-0">We craft digital, graphic and dimensional thinking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mini-stats-wid">
+                            <div class="card-body">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <p class="text-muted font-weight-medium">Orders</p>
+                                        <h4 class="mb-0">1,235</h4>
+                                    </div>
+
+                                    <div class="mini-stat-icon avatar-sm rounded-circle bg-primary align-self-center">
+                                                        <span class="avatar-title">
+                                                            <i class="bx bx-copy-alt font-size-24"></i>
+                                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mini-stats-wid">
+                            <div class="card-body">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <p class="text-muted font-weight-medium">Revenue</p>
+                                        <h4 class="mb-0">$35, 723</h4>
+                                    </div>
+
+                                    <div class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
+                                                        <span class="avatar-title rounded-circle bg-primary">
+                                                            <i class="bx bx-archive-in font-size-24"></i>
+                                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mini-stats-wid">
+                            <div class="card-body">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <p class="text-muted font-weight-medium">Average Price</p>
+                                        <h4 class="mb-0">$16.2</h4>
+                                    </div>
+
+                                    <div class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
+                                                        <span class="avatar-title rounded-circle bg-primary">
+                                                            <i class="bx bx-purchase-tag-alt font-size-24"></i>
+                                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4 float-sm-left">Email Sent</h4>
+                        <div class="float-sm-right">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Week</a>
                                 </li>
-                                <li><a data-toggle="collapse" data-target="#demo" href="#">Mailbox <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                    <ul id="demo" class="collapse dropdown-header-top">
-                                        <li><a href="mailbox.html">Inbox</a>
-                                        </li>
-                                        <li><a href="mailbox-view.html">View Mail</a>
-                                        </li>
-                                        <li><a href="mailbox-compose.html">Compose Mail</a>
-                                        </li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Month</a>
                                 </li>
-                                <li><a data-toggle="collapse" data-target="#others" href="#">Miscellaneous <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                    <ul id="others" class="collapse dropdown-header-top">
-                                        <li><a href="file-manager.html">File Manager</a></li>
-                                        <li><a href="contacts.html">Contacts Client</a></li>
-                                        <li><a href="projects.html">Project</a></li>
-                                        <li><a href="project-details.html">Project Details</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                        <li><a href="404.html">404 Page</a></li>
-                                        <li><a href="500.html">500 Page</a></li>
-                                    </ul>
-                                </li>
-                                <li><a data-toggle="collapse" data-target="#Miscellaneousmob" href="#">Interface <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                    <ul id="Miscellaneousmob" class="collapse dropdown-header-top">
-                                        <li><a href="google-map.html">Google Map</a>
-                                        </li>
-                                        <li><a href="data-maps.html">Data Maps</a>
-                                        </li>
-                                        <li><a href="pdf-viewer.html">Pdf Viewer</a>
-                                        </li>
-                                        <li><a href="x-editable.html">X-Editable</a>
-                                        </li>
-                                        <li><a href="code-editor.html">Code Editor</a>
-                                        </li>
-                                        <li><a href="tree-view.html">Tree View</a>
-                                        </li>
-                                        <li><a href="preloader.html">Preloader</a>
-                                        </li>
-                                        <li><a href="images-cropper.html">Images Cropper</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a data-toggle="collapse" data-target="#Chartsmob" href="#">Charts <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                    <ul id="Chartsmob" class="collapse dropdown-header-top">
-                                        <li><a href="bar-charts.html">Bar Charts</a>
-                                        </li>
-                                        <li><a href="line-charts.html">Line Charts</a>
-                                        </li>
-                                        <li><a href="area-charts.html">Area Charts</a>
-                                        </li>
-                                        <li><a href="rounded-chart.html">Rounded Charts</a>
-                                        </li>
-                                        <li><a href="c3.html">C3 Charts</a>
-                                        </li>
-                                        <li><a href="sparkline.html">Sparkline Charts</a>
-                                        </li>
-                                        <li><a href="peity.html">Peity Charts</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a data-toggle="collapse" data-target="#Tablesmob" href="#">Tables <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                    <ul id="Tablesmob" class="collapse dropdown-header-top">
-                                        <li><a href="static-table.html">Static Table</a>
-                                        </li>
-                                        <li><a href="data-table.html">Data Table</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a data-toggle="collapse" data-target="#formsmob" href="#">Forms <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                    <ul id="formsmob" class="collapse dropdown-header-top">
-                                        <li><a href="basic-form-element.html">Basic Form Elements</a>
-                                        </li>
-                                        <li><a href="advance-form-element.html">Advanced Form Elements</a>
-                                        </li>
-                                        <li><a href="password-meter.html">Password Meter</a>
-                                        </li>
-                                        <li><a href="multi-upload.html">Multi Upload</a>
-                                        </li>
-                                        <li><a href="tinymc.html">Text Editor</a>
-                                        </li>
-                                        <li><a href="dual-list-box.html">Dual List Box</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a data-toggle="collapse" data-target="#Appviewsmob" href="#">App views <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                    <ul id="Appviewsmob" class="collapse dropdown-header-top">
-                                        <li><a href="basic-form-element.html">Basic Form Elements</a>
-                                        </li>
-                                        <li><a href="advance-form-element.html">Advanced Form Elements</a>
-                                        </li>
-                                        <li><a href="password-meter.html">Password Meter</a>
-                                        </li>
-                                        <li><a href="multi-upload.html">Multi Upload</a>
-                                        </li>
-                                        <li><a href="tinymc.html">Text Editor</a>
-                                        </li>
-                                        <li><a href="dual-list-box.html">Dual List Box</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Pages <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                    <ul id="Pagemob" class="collapse dropdown-header-top">
-                                        <li><a href="login.html">Login</a>
-                                        </li>
-                                        <li><a href="register.html">Register</a>
-                                        </li>
-                                        <li><a href="lock.html">Lock</a>
-                                        </li>
-                                        <li><a href="password-recovery.html">Password Recovery</a>
-                                        </li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Year</a>
                                 </li>
                             </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Mobile Menu end -->
-    <div class="breadcome-area">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="breadcome-list">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="breadcomb-wp">
-                                    <div class="breadcomb-icon">
-                                        <i class="icon nalika-home"></i>
-                                    </div>
-                                    <div class="breadcomb-ctn">
-                                        <h2>Dashboard One</h2>
-                                        <p>Welcome to Nalika <span class="bread-ntd">Admin Template</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="breadcomb-report">
-                                    <button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="icon nalika-download"></i></button>
-                                </div>
-                            </div>
                         </div>
+                        <div class="clearfix"></div>
+                        <div id="stacked-column-chart" class="apex-charts" dir="ltr"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- end row -->
 
-    <div class="section-admin container-fluid">
-        <div class="row admin text-center">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-15">
-                            <h4 class="text-left text-uppercase"><b>Orders</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="col-xs-3 mar-bot-15 text-left">
-                                    <label class="label bg-green">30% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">10,000</h2>
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">Social Source</h4>
+                        <div class="text-center">
+                            <div class="avatar-sm mx-auto mb-4">
+                                                <span class="avatar-title rounded-circle bg-soft-primary font-size-24">
+                                                        <i class="mdi mdi-facebook text-primary"></i>
+                                                    </span>
+                            </div>
+                            <p class="font-16 text-muted mb-2"></p>
+                            <h5><a href="#" class="text-dark">Facebook - <span class="text-muted font-16">125 sales</span> </a></h5>
+                            <p class="text-muted">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus tincidunt.</p>
+                            <a href="#" class="text-primary font-16">Learn more <i class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4">
+                                <div class="social-source text-center mt-3">
+                                    <div class="avatar-xs mx-auto mb-3">
+                                                        <span class="avatar-title rounded-circle bg-primary font-size-16">
+                                                                <i class="mdi mdi-facebook text-white"></i>
+                                                            </span>
+                                    </div>
+                                    <h5 class="font-size-15">Facebook</h5>
+                                    <p class="text-muted mb-0">125 sales</p>
                                 </div>
                             </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 78%;" class="progress-bar bg-green"></div>
+                            <div class="col-4">
+                                <div class="social-source text-center mt-3">
+                                    <div class="avatar-xs mx-auto mb-3">
+                                                        <span class="avatar-title rounded-circle bg-info font-size-16">
+                                                                <i class="mdi mdi-twitter text-white"></i>
+                                                            </span>
+                                    </div>
+                                    <h5 class="font-size-15">Twitter</h5>
+                                    <p class="text-muted mb-0">112 sales</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="social-source text-center mt-3">
+                                    <div class="avatar-xs mx-auto mb-3">
+                                                        <span class="avatar-title rounded-circle bg-pink font-size-16">
+                                                                <i class="mdi mdi-instagram text-white"></i>
+                                                            </span>
+                                    </div>
+                                    <h5 class="font-size-15">Instagram</h5>
+                                    <p class="text-muted mb-0">104 sales</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom:1px;">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>Tax Deduction</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-red">15% <i class="fa fa-level-down" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">5,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 38%;" class="progress-bar progress-bar-danger bg-red"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>Revenue</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-blue">50% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">$70,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 60%;" class="progress-bar bg-blue"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>Yearly Sales</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-purple">80% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">$100,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 60%;" class="progress-bar bg-purple"></div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="product-sales-area mg-tb-30">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                    <div class="product-sales-chart">
-                        <div class="portlet-title">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="caption pro-sl-hd">
-                                        <span class="caption-subject text-uppercase"><b>Product Sales</b></span>
-                                    </div>
+            <div class="col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-5">Activity</h4>
+                        <ul class="verti-timeline list-unstyled">
+                            <li class="event-list">
+                                <div class="event-timeline-dot">
+                                    <i class="bx bx-right-arrow-circle font-size-18"></i>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="actions graph-rp">
-                                        <div class="btn-group" data-toggle="buttons">
-                                            <label class="btn btn-grey active">
-                                                <input type="radio" name="options" class="toggle" id="option1" checked="">Today</label>
-                                            <label class="btn btn-grey">
-                                                <input type="radio" name="options" class="toggle" id="option2">Week</label>
+                                <div class="media">
+                                    <div class="mr-3">
+                                        <h5 class="font-size-14">22 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ml-2"></i></h5>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            Responded to need “Volunteer Activities
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div id="curved-line-chart" class="flot-chart-sts flot-chart curved-chart-statistic"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="white-box analytics-info-cs mg-b-30 res-mg-t-30">
-                        <h3 class="box-title">Total Visit</h3>
-                        <ul class="list-inline two-part-sp">
-                            <li>
-                                <div id="sparklinedash"></div>
                             </li>
-                            <li class="text-right sp-cn-r"><i class="fa fa-level-up" aria-hidden="true"></i> <span class="counter sales-sts-ctn">8659</span></li>
-                        </ul>
-                    </div>
-                    <div class="white-box analytics-info-cs mg-b-30">
-                        <h3 class="box-title">Total Page Views</h3>
-                        <ul class="list-inline two-part-sp">
-                            <li>
-                                <div id="sparklinedash2"></div>
-                            </li>
-                            <li class="text-right"><i class="fa fa-level-up" aria-hidden="true"></i> <span class="counter sales-sts-ctn">7469</span></li>
-                        </ul>
-                    </div>
-                    <div class="white-box analytics-info-cs mg-b-30">
-                        <h3 class="box-title">Unique Visitor</h3>
-                        <ul class="list-inline two-part-sp">
-                            <li>
-                                <div id="sparklinedash3"></div>
-                            </li>
-                            <li class="text-right"><i class="fa fa-level-up" aria-hidden="true"></i> <span class="counter sales-sts-ctn">6011</span></li>
-                        </ul>
-                    </div>
-                    <div class="white-box analytics-info-cs">
-                        <h3 class="box-title">Bounce Rate</h3>
-                        <ul class="list-inline two-part-sp">
-                            <li>
-                                <div id="sparklinedash4"></div>
-                            </li>
-                            <li class="text-right"><i class="fa fa-level-down" aria-hidden="true"></i> <span class="sales-sts-ctn">18%</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="traffic-analysis-area">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="white-box tranffic-als-inner">
-                        <h3 class="box-title"><small class="pull-right m-t-10 text-success last-month-sc cl-one"><i class="fa fa-sort-asc"></i> 18% last month</small> Site Traffic</h3>
-                        <div class="stats-row">
-                            <div class="stat-item">
-                                <h6>Overall Growth</h6>
-                                <b>80.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Montly</h6>
-                                <b>15.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Day</h6>
-                                <b>5.50%</b></div>
-                        </div>
-                        <div id="sparkline8"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="white-box tranffic-als-inner res-mg-t-30">
-                        <h3 class="box-title"><small class="pull-right m-t-10 text-danger last-month-sc cl-two"><i class="fa fa-sort-desc"></i> 18% last month</small>Site Traffic</h3>
-                        <div class="stats-row">
-                            <div class="stat-item">
-                                <h6>Overall Growth</h6>
-                                <b>80.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Montly</h6>
-                                <b>15.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Day</h6>
-                                <b>5.50%</b></div>
-                        </div>
-                        <div id="sparkline9"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="white-box tranffic-als-inner res-mg-t-30">
-                        <h3 class="box-title"><small class="pull-right m-t-10 text-success last-month-sc cl-three"><i class="fa fa-sort-asc"></i> 18% last month</small>Site Traffic</h3>
-                        <div class="stats-row">
-                            <div class="stat-item">
-                                <h6>Overall Growth</h6>
-                                <b>80.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Montly</h6>
-                                <b>15.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Day</h6>
-                                <b>5.50%</b></div>
-                        </div>
-                        <div id="sparkline10"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-new-list-area">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-new-trend mg-t-30">
-                        <a href="#"><img src="{{asset('/')}}admin/img/new-product/5.png" alt=""></a>
-                        <div class="overlay-content">
-                            <a href="#">
-                                <h2>$280</h2>
-                            </a>
-                            <a href="#" class="btn-small">Now</a>
-                            <div class="product-action">
-                                <ul>
-                                    <li>
-                                        <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="pro-tlt" href="#">
-                                <h4>Princes Diamond</h4>
-                            </a>
-                            <div class="pro-rating">
-                                <i class="fa fa-star color"></i>
-                                <i class="fa fa-star color"></i>
-                                <i class="fa fa-star color"></i>
-                                <i class="icon nalika-half-filled-rating-star color"></i>
-                                <i class="icon nalika-half-filled-rating-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-new-trend mg-t-30">
-                        <a href="#"><img src="{{asset('/')}}admin/img/new-product/5.png" alt=""></a>
-                        <div class="overlay-content">
-                            <a href="#">
-                                <h2>$280</h2>
-                            </a>
-                            <a href="#" class="btn-small">Now</a>
-                            <div class="product-action">
-                                <ul>
-                                    <li>
-                                        <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="#">
-                                <h4>Princes Diamond</h4>
-                            </a>
-                            <div class="pro-rating">
-                                <i class="fa fa-star color"></i>
-                                <i class="fa fa-star color"></i>
-                                <i class="fa fa-star color"></i>
-                                <i class="icon nalika-half-filled-rating-star color"></i>
-                                <i class="icon nalika-half-filled-rating-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-new-trend mg-t-30">
-                        <a href="#"><img src="{{asset('/')}}admin/img/new-product/5.png" alt=""></a>
-                        <div class="overlay-content">
-                            <a href="#">
-                                <h2>$280</h2>
-                            </a>
-                            <a href="#" class="btn-small">Now</a>
-                            <div class="product-action">
-                                <ul>
-                                    <li>
-                                        <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="#">
-                                <h4>Princes Diamond</h4>
-                            </a>
-                            <div class="pro-rating">
-                                <i class="fa fa-star color"></i>
-                                <i class="fa fa-star color"></i>
-                                <i class="fa fa-star color"></i>
-                                <i class="icon nalika-half-filled-rating-star color"></i>
-                                <i class="icon nalika-half-filled-rating-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-new-trend mg-t-30">
-                        <a href="#"><img src="{{asset('/')}}admin/img/new-product/5.png" alt=""></a>
-                        <div class="overlay-content">
-                            <a href="#">
-                                <h2>$280</h2>
-                            </a>
-                            <a href="#" class="btn-small">Now</a>
-                            <div class="product-action">
-                                <ul>
-                                    <li>
-                                        <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="#">
-                                <h4>Princes Diamond</h4>
-                            </a>
-                            <div class="pro-rating">
-                                <i class="fa fa-star color"></i>
-                                <i class="fa fa-star color"></i>
-                                <i class="fa fa-star color"></i>
-                                <i class="icon nalika-half-filled-rating-star color"></i>
-                                <i class="icon nalika-half-filled-rating-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-sales-area mg-tb-30">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                    <div class="product-sales-chart">
-                        <div class="portlet-title">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="caption pro-sl-hd">
-                                        <span class="caption-subject text-uppercase"><b>Order Statistic</b></span>
+                            <li class="event-list">
+                                <div class="event-timeline-dot">
+                                    <i class="bx bx-right-arrow-circle font-size-18"></i>
+                                </div>
+                                <div class="media">
+                                    <div class="mr-3">
+                                        <h5 class="font-size-14">17 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ml-2"></i></h5>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            Everyone realizes why a new common language would be desirable... <a href="#">Read more</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="actions graph-rp">
-                                        <a href="#" class="btn btn-dark-blue btn-circle active tip-top" data-toggle="tooltip" title="Upload">
-                                            <i class="fa fa-cloud-download" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-dark btn-circle active tip-top" data-toggle="tooltip" title="Refresh">
-                                            <i class="fa fa-reply" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-blue-grey btn-circle active tip-top" data-toggle="tooltip" title="Delete">
-                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                        </a>
+                            </li>
+                            <li class="event-list active">
+                                <div class="event-timeline-dot">
+                                    <i class="bx bxs-right-arrow-circle font-size-18 bx-fade-right"></i>
+                                </div>
+                                <div class="media">
+                                    <div class="mr-3">
+                                        <h5 class="font-size-14">15 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ml-2"></i></h5>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            Joined the group “Boardsmanship Forum”
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div id="line-chart" class="flot-chart flot-chart-sts line-chart-statistic"></div>
+                            </li>
+                            <li class="event-list">
+                                <div class="event-timeline-dot">
+                                    <i class="bx bx-right-arrow-circle font-size-18"></i>
+                                </div>
+                                <div class="media">
+                                    <div class="mr-3">
+                                        <h5 class="font-size-14">12 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ml-2"></i></h5>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            Responded to need “In-Kind Opportunity”
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="text-center mt-4"><a href="#" class="btn btn-primary waves-effect waves-light btn-sm">View More <i class="mdi mdi-arrow-right ml-1"></i></a></div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="analytics-rounded mg-b-30 res-mg-t-30">
-                        <div class="analytics-rounded-content">
-                            <h5>Percentage distribution</h5>
-                            <h2><span class="counter">60</span>/20</h2>
-                            <div class="text-center">
-                                <div id="sparkline51"></div>
+            </div>
+
+            <div class="col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">Top Cities Selling Product</h4>
+
+                        <div class="text-center">
+                            <div class="mb-4">
+                                <i class="bx bx-map-pin text-primary display-4"></i>
                             </div>
+                            <h3>1,456</h3>
+                            <p>San Francisco</p>
                         </div>
-                    </div>
-                    <div class="analytics-rounded">
-                        <div class="analytics-rounded-content">
-                            <h5>Percentage division</h5>
-                            <h2><span class="counter">150</span>/<span class="counter">54</span></h2>
-                            <div class="text-center">
-                                <div id="sparkline52"></div>
-                            </div>
+
+                        <div class="table-responsive mt-4">
+                            <table class="table table-centered table-nowrap">
+                                <tbody>
+                                <tr>
+                                    <td style="width: 30%">
+                                        <p class="mb-0">San Francisco</p>
+                                    </td>
+                                    <td style="width: 25%">
+                                        <h5 class="mb-0">1,456</h5></td>
+                                    <td>
+                                        <div class="progress bg-transparent progress-sm">
+                                            <div class="progress-bar bg-primary rounded" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="mb-0">Los Angeles</p>
+                                    </td>
+                                    <td>
+                                        <h5 class="mb-0">1,123</h5>
+                                    </td>
+                                    <td>
+                                        <div class="progress bg-transparent progress-sm">
+                                            <div class="progress-bar bg-success rounded" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="mb-0">San Diego</p>
+                                    </td>
+                                    <td>
+                                        <h5 class="mb-0">1,026</h5>
+                                    </td>
+                                    <td>
+                                        <div class="progress bg-transparent progress-sm">
+                                            <div class="progress-bar bg-warning rounded" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- end row -->
 
-    <div class="author-area-pro">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">Latest Transaction</h4>
+                        <div class="table-responsive">
+                            <table class="table table-centered table-nowrap mb-0">
+                                <thead class="thead-light">
+                                <tr>
+                                    <th style="width: 20px;">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">&nbsp;</label>
+                                        </div>
+                                    </th>
+                                    <th>Order ID</th>
+                                    <th>Billing Name</th>
+                                    <th>Date</th>
+                                    <th>Total</th>
+                                    <th>Payment Status</th>
+                                    <th>Payment Method</th>
+                                    <th>View Details</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td><a href="javascript: void(0);" class="text-body font-weight-bold">#SK2540</a> </td>
+                                    <td>Neal Matthews</td>
+                                    <td>
+                                        07 Oct, 2019
+                                    </td>
+                                    <td>
+                                        $400
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-pill badge-soft-success font-size-12">Paid</span>
+                                    </td>
+                                    <td>
+                                        <i class="fab fa-cc-mastercard mr-1"></i> Mastercard
+                                    </td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-toggle="modal" data-target=".exampleModal">
+                                            View Details
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td><a href="javascript: void(0);" class="text-body font-weight-bold">#SK2541</a> </td>
+                                    <td>Jamal Burnett</td>
+                                    <td>
+                                        07 Oct, 2019
+                                    </td>
+                                    <td>
+                                        $380
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-pill badge-soft-danger font-size-12">Chargeback</span>
+                                    </td>
+                                    <td>
+                                        <i class="fab fa-cc-visa mr-1"></i> Visa
+                                    </td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-toggle="modal" data-target=".exampleModal">
+                                            View Details
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label" for="customCheck4">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td><a href="javascript: void(0);" class="text-body font-weight-bold">#SK2542</a> </td>
+                                    <td>Juan Mitchell</td>
+                                    <td>
+                                        06 Oct, 2019
+                                    </td>
+                                    <td>
+                                        $384
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-pill badge-soft-success font-size-12">Paid</span>
+                                    </td>
+                                    <td>
+                                        <i class="fab fa-cc-paypal mr-1"></i> Paypal
+                                    </td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-toggle="modal" data-target=".exampleModal">
+                                            View Details
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                            <label class="custom-control-label" for="customCheck5">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td><a href="javascript: void(0);" class="text-body font-weight-bold">#SK2543</a> </td>
+                                    <td>Barry Dick</td>
+                                    <td>
+                                        05 Oct, 2019
+                                    </td>
+                                    <td>
+                                        $412
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-pill badge-soft-success font-size-12">Paid</span>
+                                    </td>
+                                    <td>
+                                        <i class="fab fa-cc-mastercard mr-1"></i> Mastercard
+                                    </td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-toggle="modal" data-target=".exampleModal">
+                                            View Details
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                            <label class="custom-control-label" for="customCheck6">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td><a href="javascript: void(0);" class="text-body font-weight-bold">#SK2544</a> </td>
+                                    <td>Ronald Taylor</td>
+                                    <td>
+                                        04 Oct, 2019
+                                    </td>
+                                    <td>
+                                        $404
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-pill badge-soft-warning font-size-12">Refund</span>
+                                    </td>
+                                    <td>
+                                        <i class="fab fa-cc-visa mr-1"></i> Visa
+                                    </td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-toggle="modal" data-target=".exampleModal">
+                                            View Details
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                            <label class="custom-control-label" for="customCheck7">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td><a href="javascript: void(0);" class="text-body font-weight-bold">#SK2545</a> </td>
+                                    <td>Jacob Hunter</td>
+                                    <td>
+                                        04 Oct, 2019
+                                    </td>
+                                    <td>
+                                        $392
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-pill badge-soft-success font-size-12">Paid</span>
+                                    </td>
+                                    <td>
+                                        <i class="fab fa-cc-paypal mr-1"></i> Paypal
+                                    </td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-toggle="modal" data-target=".exampleModal">
+                                            View Details
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- end table-responsive -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- container-fluid -->
+
+    <!-- End Page-content -->
+
+    <!-- Modal -->
+    <div class="modal fade exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Order Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-2">Product id: <span class="text-primary">#SK2540</span></p>
+                    <p class="mb-4">Billing Name: <span class="text-primary">Neal Matthews</span></p>
+
+                    <div class="table-responsive">
+                        <table class="table table-centered table-nowrap">
+                            <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <div>
+                                        <img src="{{asset('/')}}admin/assets/images/product/img-7.png" alt="" class="avatar-sm">
+                                    </div>
+                                </th>
+                                <td>
+                                    <div>
+                                        <h5 class="text-truncate font-size-14">Wireless Headphone (Black)</h5>
+                                        <p class="text-muted mb-0">$ 225 x 1</p>
+                                    </div>
+                                </td>
+                                <td>$ 255</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div>
+                                        <img src="{{asset('/')}}admin/assets/images/product/img-4.png" alt="" class="avatar-sm">
+                                    </div>
+                                </th>
+                                <td>
+                                    <div>
+                                        <h5 class="text-truncate font-size-14">Phone patterned cases</h5>
+                                        <p class="text-muted mb-0">$ 145 x 1</p>
+                                    </div>
+                                </td>
+                                <td>$ 145</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <h6 class="m-0 text-right">Sub Total:</h6>
+                                </td>
+                                <td>
+                                    $ 400
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <h6 class="m-0 text-right">Shipping:</h6>
+                                </td>
+                                <td>
+                                    Free
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <h6 class="m-0 text-right">Total:</h6>
+                                </td>
+                                <td>
+                                    $ 400
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="personal-info-wrap">
-                        <div class="widget-head-info-box">
-                            <div class="persoanl-widget-hd">
-                                <h2>Jon Royita</h2>
-                                <p>Founder of Uttara It Park</p>
-                            </div>
-                            <img src="{{asset('/')}}admin/img/notification/5.jpg" class="img-circle circle-border m-b-md" alt="profile">
-                            <div class="social-widget-result">
-                                <span>100 Tweets</span> |
-                                <span>350 Following</span> |
-                                <span>610 Followers</span>
-                            </div>
-                        </div>
-                        <div class="widget-text-box">
-                            <h4>Jhon Royita</h4>
-                            <p>To all the athaists attacking me right now, I can't make you believe in God, you have to have faith.</p>
-                            <div class="text-right like-love-list">
-                                <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
-                                <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> Love</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-6">
+                    <script>document.write(new Date().getFullYear())</script> © Kamrul.
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="author-widgets-single res-mg-t-30">
-                        <div class="author-wiget-inner">
-                            <div class="perso-img">
-                                <img src="{{asset('/')}}admin/img/notification/6.jpg" class="img-circle circle-border m-b-md" alt="profile">
-                            </div>
-                            <div class="persoanl-widget-hd persoanl1-widget-hd">
-                                <h2>Fire Foxy</h2>
-                                <p>Founder of Uttara It House</p>
-                            </div>
-                            <div class="social-widget-result social-widget1-result">
-                                <span>100 Tweets</span> |
-                                <span>350 Following</span> |
-                                <span>610 Followers</span>
-                            </div>
-                        </div>
-                        <div class="widget-text-box">
-                            <h4>Fire Foxy</h4>
-                            <p>To all the athaists attacking me right now, I can't make you believe in God, you have to have faith.</p>
-                            <div class="text-right like-love-list">
-                                <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
-                                <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> Love</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="personal-info-wrap personal-info-ano res-mg-t-30">
-                        <div class="widget-head-info-box">
-                            <div class="persoanl-widget-hd">
-                                <h2>Jon Royita</h2>
-                                <p>Founder of Uttara It Park</p>
-                            </div>
-                            <img src="{{asset('/')}}admin/img/contact/2.jpg" class="img-circle circle-border m-b-md" alt="profile">
-                            <div class="social-widget-result">
-                                <span>100 Tweets</span> |
-                                <span>350 Following</span> |
-                                <span>610 Followers</span>
-                            </div>
-                        </div>
-                        <div class="widget-text-box">
-                            <h4>Jhon Royita</h4>
-                            <p>To all the athaists attacking me right now, I can't make you believe in God, you have to have faith.</p>
-                            <div class="text-right like-love-list">
-                                <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
-                                <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> Love</a>
-                            </div>
-                        </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-right d-none d-sm-block">
+                        Design & Develop by Kamrul
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="calender-area mg-tb-30">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="calender-inner">
-                        <div id='calendar'></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
+    </footer>
+    {{--    </div>--}}
+    <!-- end main content-->
 @endsection

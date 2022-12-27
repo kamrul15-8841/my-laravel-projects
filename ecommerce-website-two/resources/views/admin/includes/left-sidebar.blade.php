@@ -1,51 +1,76 @@
-<div class="left-sidebar-pro">
-    <nav id="sidebar" class="">
-        <div class="sidebar-header">
-            <a href="{{route('dashboard')}}"><img class="main-logo" src="{{asset('/')}}admin/img/logo/logo.png" alt="" /></a>
-            <strong><img src="{{asset('/')}}admin/img/logo/logosn.png" alt="" /></strong>
-        </div>
-        <div class="nalika-profile">
-            <div class="profile-dtl">
-                <a href="{{route('dashboard')}}"><img src="{{asset('/')}}admin/img/notification/4.jpg" alt="" /></a>
-                <h2>Lakian <span class="min-dtn">Das</span></h2>
-            </div>
-            <div class="profile-social-dtl">
-                <ul class="dtl-social">
-                    <li><a href="#"><i class="icon nalika-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon nalika-twitter"></i></a></li>
-                    <li><a href="#"><i class="icon nalika-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="left-custom-menu-adp-wrap comment-scrollbar">
-            <nav class="sidebar-nav left-sidebar-menu-pro">
-                <ul class="metismenu" id="menu1">
-                    <li id="removable">
-                        <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Product Category</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="Login" href="{{route('add-category')}}"><span class="mini-sub-pro">Add Category</span></a></li>
-                            <li><a title="Register" href="register.html"><span class="mini-sub-pro">Manage Category</span></a></li>
-                        </ul>
-                    </li>
+<div class="vertical-menu">
 
-                    <li id="removable">
-                        <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Product Brand</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="Login" href="login.html"><span class="mini-sub-pro">Add Brand</span></a></li>
-                            <li><a title="Register" href="register.html"><span class="mini-sub-pro">Manage Brand</span></a></li>
-                        </ul>
-                    </li>
+    <div data-simplebar class="h-100">
 
-                    <li id="removable">
-                        <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Product</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="Login" href="login.html"><span class="mini-sub-pro">Add Product</span></a></li>
-                            <li><a title="Register" href="register.html"><span class="mini-sub-pro">Manage Product</span></a></li>
-                        </ul>
-                    </li>
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title">Menu</li>
 
-                </ul>
-            </nav>
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        {{--                        <i class="bx bx-home-circle"></i><span class="badge badge-pill badge-info float-right">03</span>--}}
+                        <span>Dashboards</span>
+                    </a>
+                    {{--                    <ul class="sub-menu" aria-expanded="false">--}}
+                    {{--                        <li><a href="index.html">Default</a></li>--}}
+                    {{--                        <li><a href="dashboard-saas.html">Saas</a></li>--}}
+                    {{--                        <li><a href="dashboard-crypto.html">Crypto</a></li>--}}
+                    {{--                    </ul>--}}
+                </li>
+
+
+
+                <li class="menu-title">Apps</li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-layout"></i>
+                        <span>User Module</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="crypto-wallet.html">Add Course</a></li>
+                        <li><a href="crypto-buy-sell.html">Manage Course</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-store"></i>
+                        <span>Teacher Module</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="crypto-wallet.html">Add Course</a></li>
+                        <li><a href="crypto-buy-sell.html">Manage Course</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-bitcoin"></i>
+                        <span>Course Module</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="crypto-wallet.html">Add Course</a></li>
+                        <li><a href="crypto-buy-sell.html">Manage Course</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-envelope"></i>
+                        <span>Student Module</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="email-inbox.html">Add Student</a></li>
+                        <li><a href="email-read.html">Manage Student</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
         </div>
-    </nav>
+        <!-- Sidebar -->
+    </div>
 </div>

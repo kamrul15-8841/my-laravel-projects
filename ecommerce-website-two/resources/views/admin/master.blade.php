@@ -1,150 +1,120 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
+
+<!-- Mirrored from themesbrand.com/skote/layouts/vertical/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2020 15:06:42 GMT -->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard V.1 | Nalika - Material Admin Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- favicon
-		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('/')}}admin/img/favicon.ico">
-    <!-- Google Fonts
-		============================================ -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
-    <!-- Bootstrap CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/bootstrap.min.css">
 
-    <!-- Bootstrap CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/font-awesome.min.css">
-    <!-- nalika Icon CSS
-        ============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/nalika-icon.css">
-    <!-- owl.carousel CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/owl.carousel.css">
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/owl.theme.css">
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/owl.transitions.css">
-    <!-- animate CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/animate.css">
-    <!-- normalize CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/normalize.css">
-    <!-- meanmenu icon CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/meanmenu.min.css">
-    <!-- main CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/main.css">
-    <!-- morrisjs CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/morrisjs/morris.css">
-    <!-- mCustomScrollbar CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/scrollbar/jquery.mCustomScrollbar.min.css">
-    <!-- metisMenu CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/metisMenu/metisMenu.min.css">
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/metisMenu/metisMenu-vertical.css">
-    <!-- calendar CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/calendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/calendar/fullcalendar.print.min.css">
-    <!-- style CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/style.css">
-    <!-- responsive CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('/')}}admin/css/responsive.css">
-    <!-- modernizr JS
-		============================================ -->
-    <script src="{{asset('/')}}admin/js/vendor/modernizr-2.8.3.min.js"></script>
+    <meta charset="utf-8" />
+    <title>@yield('title')</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{{asset('/')}}admin/assets/images/favicon.ico">
+
+    <!-- Bootstrap Css -->
+    <link href="{{asset('/')}}admin/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="{{asset('/')}}admin/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="{{asset('/')}}admin/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+{{--    @include('admin.includes.header')--}}
+    @yield('header')
+
 </head>
 
-<body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
+<body data-sidebar="dark">
 
-@include('admin.includes.left-sidebar')
+<!-- Begin page -->
+<div id="layout-wrapper">
 
-<!-- Start Welcome area -->
-<div class="all-content-wrapper">
+{{--    Top Header --}}
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="logo-pro">
-                    <a href="index.html"><img class="main-logo" src="{{asset('/')}}admin/img/logo/logo.png" alt="" /></a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     @include('admin.includes.header')
 
-    @yield('body')
+<!-- ========== Left Sidebar Start ========== -->
 
-{{--    @include('admin.includes.footer')--}}
+    @include('admin.includes.left-sidebar')
 
+    <div class="main-content">
+        <div class="page-content">
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <!-- end main content-->
+            @yield('body')
+        </div>
+    </div>
 </div>
-<!-- jquery
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/vendor/jquery-1.12.4.min.js"></script>
-<!-- bootstrap JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/bootstrap.min.js"></script>
-<!-- wow JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/wow.min.js"></script>
-<!-- price-slider JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/jquery-price-slider.js"></script>
-<!-- meanmenu JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/jquery.meanmenu.js"></script>
-<!-- owl.carousel JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/owl.carousel.min.js"></script>
-<!-- sticky JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/jquery.sticky.js"></script>
-<!-- scrollUp JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/jquery.scrollUp.min.js"></script>
-<!-- mCustomScrollbar JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="{{asset('/')}}admin/js/scrollbar/mCustomScrollbar-active.js"></script>
-<!-- metisMenu JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/metisMenu/metisMenu.min.js"></script>
-<script src="{{asset('/')}}admin/js/metisMenu/metisMenu-active.js"></script>
-<!-- sparkline JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/sparkline/jquery.sparkline.min.js"></script>
-<script src="{{asset('/')}}admin/js/sparkline/jquery.charts-sparkline.js"></script>
-<!-- calendar JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/calendar/moment.min.js"></script>
-<script src="{{asset('/')}}admin/js/calendar/fullcalendar.min.js"></script>
-<script src="{{asset('/')}}admin/js/calendar/fullcalendar-active.js"></script>
-<!-- float JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/flot/jquery.flot.js"></script>
-<script src="{{asset('/')}}admin/js/flot/jquery.flot.resize.js"></script>
-<script src="{{asset('/')}}admin/js/flot/curvedLines.js"></script>
-<script src="{{asset('/')}}admin/js/flot/flot-active.js"></script>
-<!-- plugins JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/plugins.js"></script>
-<!-- main JS
-    ============================================ -->
-<script src="{{asset('/')}}admin/js/main.js"></script>
-</body>
+<!-- END layout-wrapper -->
 
+<!-- Right Sidebar -->
+<div class="right-bar">
+    <div data-simplebar class="h-100">
+        <div class="rightbar-title px-3 py-4">
+            <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                <i class="mdi mdi-close noti-icon"></i>
+            </a>
+            <h5 class="m-0">Settings</h5>
+        </div>
+
+        <!-- Settings -->
+        <hr class="mt-0" />
+        <h6 class="text-center mb-0">Choose Layouts</h6>
+
+        <div class="p-4">
+            <div class="mb-2">
+                <img src="{{asset('/')}}assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+            </div>
+            <div class="custom-control custom-switch mb-3">
+                <input type="checkbox" class="custom-control-input theme-choice" id="light-mode-switch" checked />
+                <label class="custom-control-label" for="light-mode-switch">Light Mode</label>
+            </div>
+
+            <div class="mb-2">
+                <img src="{{asset('/')}}assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="">
+            </div>
+            <div class="custom-control custom-switch mb-3">
+                <input type="checkbox" class="custom-control-input theme-choice" id="dark-mode-switch" data-bsStyle="{{asset('/')}}assets/css/bootstrap-dark.min.css" data-appStyle="{{asset('/')}}assets/css/app-dark.min.css" />
+                <label class="custom-control-label" for="dark-mode-switch">Dark Mode</label>
+            </div>
+
+            <div class="mb-2">
+                <img src="{{asset('/')}}assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="">
+            </div>
+            <div class="custom-control custom-switch mb-5">
+                <input type="checkbox" class="custom-control-input theme-choice" id="rtl-mode-switch" data-appStyle="{{asset('/')}}assets/css/app-rtl.min.css" />
+                <label class="custom-control-label" for="rtl-mode-switch">RTL Mode</label>
+            </div>
+
+
+        </div>
+
+    </div> <!-- end slimscroll-menu-->
+</div>
+<!-- /Right-bar -->
+
+<!-- Right bar overlay-->
+<div class="rightbar-overlay"></div>
+<!-- JAVASCRIPT -->
+<script src="{{asset('/')}}admin/assets/libs/jquery/jquery.min.js"></script>
+<script src="{{asset('/')}}admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+{{--<script src="{{asset('/')}}admin/assets/libs/metismenu/metisMenu.min.js"></script>--}}
+<script src="{{asset('/')}}admin/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="{{asset('/')}}admin/assets/libs/node-waves/waves.min.js"></script>
+
+<!-- apexcharts -->
+<script src="{{asset('/')}}admin/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+<script src="{{asset('/')}}admin/assets/js/pages/dashboard.init.js"></script>
+
+<!-- App js -->
+<script src="{{asset('/')}}admin/assets/js/app.js"></script>
+{{--@include('admin.includes.footer')--}}
+
+</body>
+<!-- Mirrored from themesbrand.com/skote/layouts/vertical/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2020 15:07:20 GMT -->
 </html>
